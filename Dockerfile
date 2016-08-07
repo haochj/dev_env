@@ -31,7 +31,7 @@ RUN apt-get -y install gcc-multilib g++-multilib
 RUN apt-get -y install qemu
 
 #Install powerpc-linux-gnu-gcc powerpc-linux-gnu-g++
-RUN apt-get -y install gcc-powerpc-linux-gnu g++-powerpc-linux-gnu glibc-devel
+RUN apt-get -y install gcc-powerpc-linux-gnu g++-powerpc-linux-gnu 
 
 #Install script tool
 RUN apt-get -y install python
