@@ -33,12 +33,18 @@ RUN apt-get -y install qemu
 #Install powerpc-linux-gnu-gcc powerpc-linux-gnu-g++
 RUN apt-get -y install gcc-powerpc-linux-gnu g++-powerpc-linux-gnu
 
+#Install script tool
+RUN apt-get -y install python
 
 #Upgrade All soft
 #RUN apt-get dist-upgrade -y
 
 #Remove 
 RUN apt-get autoremove -y
+
+
+#Modify branch coverage flag
+ADD modifyfile/lcovrc /etc/lcovrc
 
 RUN echo "install ok..."
 
